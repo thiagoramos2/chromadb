@@ -1,3 +1,2 @@
 chromadb
-faiss-cpu
-
+chroma-migrate

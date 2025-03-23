@@ -1,8 +1,8 @@
 import chromadb
 from chromadb.config import Settings
 
-# Inicializar o cliente do ChromaDB
-client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory="./db"))
+# Novo formato de inicialização do ChromaDB
+client = chromadb.Client(Settings(persist_directory="./db"))
 
 # Criar uma coleção para armazenar os materiais
 collection = client.create_collection("materiais_consorcio")
